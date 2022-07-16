@@ -1,0 +1,7 @@
+GET http://localhost:5000/insert
+
+### read
+GET http://localhost:5000/read
+
+### remove
+GET http://localhost:5000/remove
