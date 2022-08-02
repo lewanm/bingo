@@ -7,7 +7,7 @@ const { insertPool,
 
 
 var corsOptions = {
-    origin: 'http://127.0.0.1:5500',
+    origin: '*',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
     }
 
@@ -20,7 +20,7 @@ const PORT = 5000
 
 app.get('/insert', (req,res) => {
     insertPool(pool,
-        {name: 'maltrato animal', especial: "false"}, 
+        {name: 'frase placeholder', especial: 'true'}, 
         result => {
             res.json(result);
         }
@@ -34,7 +34,7 @@ app.get('/read', (req,res) => {
 })
 
 app.get('/remove', (req,res) => {
-    removePool(pool, {id: 3}, result =>{
+    removePool(pool, {id: 38}, result =>{
         res.json(result)
     })
 })
