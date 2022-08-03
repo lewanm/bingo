@@ -9,8 +9,8 @@ h1 {
   background-color: pink;
 
   display: grid;
-  grid-template-columns: repeat(3, 3.3fr);
-  grid-template-rows: repeat(3, 3.3fr);
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(5, 2fr);
 }
 .caja {
   font-size: 11px;

@@ -1,7 +1,41 @@
-GET http://localhost:5000/insert
+GET http://192.168.0.211:5000/insert
 
 ### read
-GET http://localhost:5000/read
+GET http://192.168.0.211:5000/read
 
 ### remove
-GET http://localhost:5000/remove
+GET http://192.168.0.211:5000/remove
+
+
+###
+POST http://192.168.0.211:5000/agregar-frase HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "yayaya",
+    "especial": false
+}
+
+
+ 
+
+
+
+###  Header
+### Method: GET
+### Request URL: https://www.youtube.com/watch?v=KWyszSFp6Fs&t=30
+### Content-Type: application/json
+### Status Code: 200 ok
+###              404 not found
+###              400 bad request 
+###              500 internal server error
+###              401/403 unauthorized
+###              ...
+### 
+### 
+### 
+### // Methods
+### POST <-- agregar algo nuevo
+### GET <-- leer algo
+### DELETE <-- ??
+### PUT <-- modificar
